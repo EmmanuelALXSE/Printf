@@ -1,4 +1,4 @@
-_printf
+<em>_printf </em>
 This is a project to implement the functions of the C printf() function.
 
 Steps to compile and use
@@ -59,25 +59,27 @@ int main(void)
     _printf("Unknown:[%r]\n");
     return (0);
 
-}
-Compile and Run
+}\
+Compile and Run\
 # gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o print
 # ./print
-Output
-Let's try to printf a simple sentence.
-Length:[39, 39]
-Negative:[-762534]
-Unsigned:[%u]
-Unsigned octal:[%o]
-Unsigned hexadecimal:[%x, %X]
-Character:[H]
-String:[I am a string !]
-Address:[%p]
-Percent:[%]
-Author
-Emmanuel Chikwe
-Samuel Olalekan
-main.h
+Output\
+Let's try to printf a simple sentence.\
+Length:[39, 39]\
+Negative:[-762534]\
+Unsigned:[%u]\
+Unsigned octal:[%o]\
+Unsigned hexadecimal:[%x, %X]\
+Character:[H]\
+String:[I am a string !]\
+Address:[%p]\
+Percent:[%]\
+
+Authors\
+Emmanuel Chikwe\
+Samuel Olalekan\
+
+main.h\
 int print_d(va_list list);
 int print_rot13(va_list list);
 int print_rev(va_list list);
