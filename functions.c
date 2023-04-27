@@ -155,6 +155,7 @@ int print_int(va_list types, char buffer[],
 int print_binary(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
+<<<<<<< HEAD
 	unsigned int n, m, i, sum;
 	unsigned int a[32];
 	int count;
@@ -185,4 +186,20 @@ int print_binary(va_list types, char buffer[],
 		}
 	}
 	return (count);
+=======
+m /= 2;
+a[i] = (n / m) % 2;
+}
+for (i = 0, sum = 0, count = 0; i < 32; i++)
+{
+sum += a[i];
+if (sum || i == 31)
+{
+char z = '0' + a[i];
+write(1, &z, 1);
+count++;
+}
+}
+return (count);
+>>>>>>> 62f7d5d7e22306ab3cbe68f954888fbbdbec08ff
 }
